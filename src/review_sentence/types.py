@@ -13,5 +13,5 @@ class ReviewResponse(BaseModel):
     score: int
     feedback: Optional[str] = None
     explanation: Optional[str] = None
-
+    corrected_sentence: Optional[str] = None
     model_config = ConfigDict(from_attributes=True)
